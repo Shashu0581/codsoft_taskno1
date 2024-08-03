@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Center text within sections */
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#about img {
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#skills .skill {
+    margin-bottom: 15px;
+    text-align: left; 
+}
+
+.skill p {
+    margin: 0 0 5px;
+    font-weight: bold;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%; /* Define the width of the skill bar container */
+    height: 20px;
+    position: relative;
+}
+
+.skill-level {
+    background-color: #4CAF50;
+    height: 20px;
+    border-radius: 8px;
+    width: 0; /* Start width at 0 for animation */
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: grow 2s ease-in-out forwards; /* Animation */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Keyframes for skill bar animation */
+@keyframes grow {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(60); 
+    }
+}
